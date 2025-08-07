@@ -1,0 +1,18 @@
+/* PALETAS DE CORES:
+.color1 { #BF4539 };
+.color2 { #D99F59 };
+.color3 { #D93A2B };
+.color4 { #BF6860 };
+.color5 { #FFFFFF };
+*/
+
+/* Variáveis CSS para personalização */
+:root {
+    --primary-color: #D93A2B;
+    --secondary-color: #BF6860;
+    --text-color-link-menu: #D09D5B;
+    --text-color: #2c2a27;
+    --spacing-sm: 0.3rem;
+    --spacing-md: 0.5rem;
+    --spacing-lg: 1rem;
+  }

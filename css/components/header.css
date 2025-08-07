@@ -1,0 +1,228 @@
+/* Estilos gerais para o header */
+header .em-desenv h2 {
+    font-size: 13px;
+}
+
+header {
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100px;
+    z-index: 1000;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    height: 100px;
+    /*background: linear-gradient(to top, #00afac, #a0eceb, #EDEEED);*/
+    background: linear-gradient(to top, #51dad7, #f3f5f5);
+    box-shadow: 0 2px 5px rgba(8, 8, 8, 0.1);
+}
+
+/* Estilo do menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do logo */
+header .logo img {
+    height: 100px;
+}
+
+header nav .logo {
+    padding-top: 5px;
+    padding-bottom: 1px;
+}
+
+header nav a img {
+    transition: transform 0.2s ease;
+}
+
+/* header nav a img:hover {
+    transform: scale(1.1); 
+} */
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.header-nav a {
+    color: #00AFAD; 
+    text-decoration: none;
+    padding: 10px;
+}
+
+header nav .icone-rede-social {
+    display: flex;
+    gap: 10px;
+}
+
+header nav .botao-social {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 1px;
+    padding-top: 2px;
+}
+
+/* Botão de compartilhar */
+.botao-compartilhar {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: none;
+    color: #00AFAD;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.botao-compartilhar:hover {
+    transform: scale(1.2);
+    /* Mantém o fundo branco no hover */
+}
+
+header nav .nav-menu li {
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 5px 0px;
+}
+
+.header-nav .nav-menu ul li a.active {
+    color: #f8f7f7 !important;
+    font-weight: bold !important;
+    background-color: #00afacc0; 
+    box-shadow: 0px 1px 5px #00AFAD; /* sombra em bordô */
+    border-radius: 8px !important;
+    padding: 5px 10px !important;
+}
+
+/* Efeito hover */
+header .botao-social:hover {
+    transform: scale(1.2);
+}
+
+header .nav-menu li:hover {
+    transform: scale(1.1);
+    background-color: #00afacc0;
+}
+
+header .nav-menu a:hover {
+    color: #f8f7f7;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Estilo do menu hambúrguer */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #00AFAD; 
+    padding: 5px;
+}
+
+/* Ícone de "X" quando o menu está aberto */
+.hamburger.active i::before {
+    content: '\f00d';
+}
+
+/* Estilos para telas menores (tablets e smartphones) */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: #F5F5F5; /* Cinza claro */
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+        z-index: 10;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+        padding-top: 7px;
+        padding-bottom: 3px; 
+        align-items: center;
+    }
+
+    .nav-menu.active ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 95%;
+        margin-bottom: 5px;
+        justify-content: space-evenly;
+        gap: 4px;
+    }
+
+    .nav-menu.active ul li {
+        width: 48%;
+        padding: 2px 0;
+        margin: 2px 0;
+        box-sizing: border-box;
+    }
+
+    .nav-menu.active ul li:nth-child(1),
+    .nav-menu.active ul li:nth-child(2),
+    .nav-menu.active ul li:nth-child(3) {
+        width: 32%;
+        margin: 2px 1px;
+    }
+
+    .nav-menu.active ul li:nth-child(4),
+    .nav-menu.active ul li:nth-child(5) {
+        width: 48%;
+        margin: 2px 1px;
+    }
+
+    .nav-menu.active ul li a {
+        display: block;
+        padding: 5px 10px;
+        margin: 1px;
+        text-align: center;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+        font-size: 0.85em;
+        color: #00AFAD;;
+        background-color: #FFFFFF;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .header-nav .nav-menu {
+        display: none !important;
+    }
+}

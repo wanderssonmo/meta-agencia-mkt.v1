@@ -1,0 +1,209 @@
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7f8;
+      color: #333;
+    }
+
+    main.container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem 1rem;
+      animation: fadeIn 1s ease-in;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #c73871;
+    }
+
+    p {
+      line-height: 1.7;
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+
+    .legenda-topo {
+      margin: 1rem 0; /* remove auto para evitar "estreitamento" */
+      text-align: center;
+      padding: 0 0; /* remove padding lateral */
+    }
+    
+    .tela-agenda-mobile {
+      display: none;
+    }
+
+    .legenda-topo figcaption {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      color: #333;
+      font-weight: 500;
+    }
+    
+    .legenda-topo img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border: 1px #33333334 solid;
+      margin: 0 auto; /* centra a imagem se necessário */
+    }
+    
+    section {
+      margin-bottom: 1rem;
+    }
+
+    .cta-button {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      background-color: #c73871;
+      color: #fff;
+      padding: 0.9rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      margin: 1rem auto;
+    }
+
+    .cta-button:hover {
+      background-color: #F3A4C3;
+      transform: scale(1.05);
+    }
+
+    .cta-section {
+      background-color: #f7d1dc;
+      margin-top: 1.3rem;
+      padding: 1rem;
+      padding-bottom: 0.1rem;
+      border-radius: 8px;
+    }
+
+    .suporte-whatsapp {
+      margin-top: 0.5rem;
+      padding: 1rem;
+      background-color: #f1dae4;
+      border-right: 4px solid #c73871; /* cor do WhatsApp */
+      border-left: 4px solid #c73871; /* cor do WhatsApp */
+      border-radius: 8px;
+      text-align: center;
+    }
+    
+    .suporte-whatsapp p {
+      margin-bottom: 1rem;
+      color: #333;
+      font-size: 1rem;
+    }
+    
+    .whatsapp-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #c73871;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    .whatsapp-link:hover {
+      color: #c73871b2;
+      transform: scale(1.05);
+    }
+    
+    .whatsapp-link i {
+      font-size: 1.2rem;
+    }
+    
+
+    @media (max-width: 768px) {
+      .cta-button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 1rem;
+      }
+
+      h1, h2 {
+        font-size: 1.4rem;
+      }
+
+      .legenda-topo figcaption {
+        font-size: 0.95rem;
+        padding: 0 0.5rem;
+      }
+
+      .tela-agenda-desk{
+        display: none;
+      }
+
+      .tela-agenda-mobile {
+        display: block;
+      }
+    
+      .legenda-topo {
+        margin: 1rem auto;
+      }
+
+      .suporte-whatsapp {
+        padding: 1rem;
+        font-size: 0.95rem;
+      }
+    
+      .whatsapp-link {
+        /* flex-direction: column; */
+        font-size: 1rem;
+      }
+    
+      .whatsapp-link i {
+        font-size: 1.5rem;
+        margin-bottom: 0.3rem;
+      }
+    }
+ 
+    
+/* Redirecionar portal do cliente via java Script */
+/* 👇Estilo personalizado para o SweetAlert2 (alerta elegante e responsivo) */
+.swal2-custom-popup {
+  width: 300px !important;
+  padding: 1.2rem;
+  font-size: 0.95rem;
+  border-radius: 12px;
+}
+
+.swal2-custom-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.swal2-custom-text {
+  font-size: 0.95rem;
+}
+
+.swal2-custom-confirm,
+.swal2-custom-cancel {
+  font-size: 0.9rem !important;
+  padding: 0.4rem 1rem !important;
+  border-radius: 6px !important;
+}
+
+@media (max-width: 480px) {
+  .swal2-custom-popup {
+    width: 90% !important;
+    font-size: 0.9rem;
+  }
+
+  .swal2-custom-title {
+    font-size: 1rem;
+  }
+
+  .swal2-custom-confirm,
+  .swal2-custom-cancel {
+    font-size: 0.85rem !important;
+    padding: 0.3rem 0.8rem !important;
+  }
+}
+/* 👆Redirecionar portal do cliente via java Script */

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jan Ferreira Nails</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon.jpg">
+
+<!-- <meta name="google-adsense-account" content="ca-pub-8083660344980070"> -->
+
+  <meta property="og:image" content="https://janferreiranails-v1.vercel.app/assets/img/capa-de-compartilhar2.jpg">
+  <meta property="og:url" content="https://janferreiranails-v1.vercel.app/">
+
+  <meta name="description" content="Beleza única, atendimento exclusivo!">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="index, follow">
+  <!-- Incluindo CSS diretamente -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- faz parte do Font Awesome, uma biblioteca de ícones. Se a biblioteca não estiver carregada no seu projeto, os ícones não aparecerão.-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+
+<div id="header"></div>
+
+<body>
+    <section class="contato-container">
+        <div class="contato-info">
+          <h1>Fale Comigo</h1>
+          <p>Estou pronta para tirar suas dúvidas e apresentar os melhores serviços.</p>
+        </div>
+
+        <div id="mensagem-enviada" style="display:none; margin-top: 20px; color: #2d6a4f; font-weight: bold;">
+          ✅ Sua mensagem foi enviada com sucesso! Em breve entraremos em contato.
+        </div>
+    
+        <div class="form-mapa-wrapper">
+          <!-- Formulário -->
+          <form class="form-contato" action="https://formspree.io/f/xzzewrlo" method="POST">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required placeholder="Seu nome completo" />
+    
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required placeholder="seu@email.com" />
+    
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000" />
+    
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="3" required placeholder="Escreva sua mensagem aqui..."></textarea>
+    
+            <button type="submit">Enviar Mensagem</button>
+          </form>
+          
+          <div class="end-local">
+            <div>
+              <h2>Meu endereço</h2>
+              <div class="linha"></div>
+              <p class="descricao">Fique à vontade para me visitar.</p>
+            
+              <div class="info-endereco">
+                <p>
+                  <span class="icone"><i class="fas fa-map-marker-alt"></i></span>
+                  Rua do Sossego, nº 128, Araujo <br> Brasília de Minas/MG - 39.330-000.
+                   <br>
+                </p>
+              </div>
+            </div>
+
+            <!-- Mapa -->
+            <div class="mapa">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15325.287783921885!2d-44.44941222667696!3d-16.20388030240137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7551e7885b9d523%3A0x5a03f5f72dcfa63d!2sR.%20Sossego%2C%20128%20-%20Brasilia%20De%20Minas%2C%20Bras%C3%ADlia%20de%20Minas%20-%20MG%2C%2039330-000!5e0!3m2!1spt-BR!2sbr!4v1754270259569!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Informações de Contato -->
+         <!--<div class="dados-contato">
+            <p><strong>Telefone:</strong> (11) 99999-9999</p>
+            <p><strong>E-mail:</strong> contato@novaterra.com.br</p>
+            <p><strong>Endereço:</strong> Rua Exemplo, 123 - Centro, Cidade/UF</p>
+          </div> -->
+      </section>    
+    
+    <div id="footer"></div> <!-- Footer será carregado aqui -->
+    <script src="/js/main.js" defer></script>
+    <script src="js/modules/importarHeader.js"></script>
+    <script src="js/modules/importarFooter.js"></script>
+    <script src="js/modules/formulario-contato.js"></script>
+    
+</body>
+</html>
+    

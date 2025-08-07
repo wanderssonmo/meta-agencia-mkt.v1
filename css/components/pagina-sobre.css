@@ -1,0 +1,35 @@
+
+.conteudo-sobre {
+  padding: 40px 40px;
+  /* background-color: #fff5fa; */
+} 
+
+.sobre h2 {
+  text-align: center;
+  color:#c73871;
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.foto-sobre {
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.texto-sobre {
+  max-width: 600px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+}
