@@ -99,7 +99,7 @@ section.hero h2 {
 
 .beneficios h2, .servicos h2, .cta-final h2 {
   text-align: center;
-  color: #C7473C;
+  color: #00afacfb;
   margin-bottom: 30px;
 }
 
@@ -113,17 +113,17 @@ section.hero h2 {
 .card {
   flex: 1;
   min-width: 250px;
-  background-color: #fde0e8;
+  background-color: #fafcfc57;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
   text-align: center;
 }
 
 .card h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  color: #c73871;
+  color: #00afacc2;
 }
 
 /* Serviços */
@@ -156,8 +156,7 @@ section.hero h2 {
 }
 
 .cta-final h2 {
-  font-size: 2rem;
-  color: #c73871;
+
   margin-bottom: 20px;
   font-weight: bold;
 }
@@ -183,7 +182,7 @@ section.hero h2 {
 }
 
 .btn.grande {
-  background-color: #c73871;
+  background-color: #00afaccb;
   color: #fff;
   margin-top: 30px;
   padding: 15px 30px;
@@ -196,11 +195,11 @@ section.hero h2 {
 }
 
 .cta-final .btn.grande:hover {
-  background-color: #F3A4C3;
+  background-color: #00afac63;
 }
 
 section div.container a.btn:hover {
-  color: #c73871;
+  color: #fefefe;
   transform: scale(1.05);
 }
 
@@ -678,15 +677,9 @@ section.mapa-container iframe{
 }
 /* COKIES 👆 */
 
-/*👇 POLÍTICAS DE PRIVACIDA */´
+/*👇 POLÍTICAS DE PRIVACIDA */
 /* Reset básico */
 
-body {
-  background-color: #fefefe;
-  color: #333;
-  line-height: 1.7;
-  font-size: 16px;
-}
 
 .header p {
   font-size: 1rem;
@@ -699,9 +692,9 @@ body {
   max-width: 960px;
   margin: 2rem auto;
   padding: 1.5rem;
-  background-color: #e6d9d177;
+  background-color: #00afac1f;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 1, 0, 0.09);
 }
 
 .content section {
@@ -709,7 +702,7 @@ body {
 }
 
 .content h2 {
-  color: #c73871;
+  color: #02a5a5;
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
   text-align: left;

@@ -1,35 +1,46 @@
 
 .conteudo-sobre {
   padding: 40px 40px;
-  /* background-color: #fff5fa; */
 } 
 
 .sobre h2 {
   text-align: center;
-  color:#c73871;
+  color: #00AFAD;
   font-size: 2em;
   margin-top: 10px;
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 30px;
-  max-width: 1000px;
+.container-texto {
+  max-width: 900px;
   margin: 0 auto;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+  padding: 40px;
+  background-color: #cbf3f0;
+  border-radius: 20px;
 }
 
-.foto-sobre {
+.img-flutuante {
+  float: left; /* Faz o texto fluir ao redor */
+  margin: 0 20px 20px 0;
   max-width: 300px;
+  width: 100%;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-.texto-sobre {
-  max-width: 600px;
-  font-size: 1.1em;
-  line-height: 1.6;
-  color: #333;
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .img-flutuante {
+    float: none;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+
+  .container-texto {
+    padding: 20px;
+  }
 }
