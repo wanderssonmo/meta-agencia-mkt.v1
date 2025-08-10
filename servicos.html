@@ -26,47 +26,177 @@
     <!--Importa o header-->
     
     <main class="conteudo-servicos">
-    <section class="servicos">
-      <h2>Meus Serviços</h2>
-      <p class="descricao"> Meu serviço de Nail Design é cuidadosamente desenvolvido para oferecer resultados impecáveis e personalizados, atendendo desde as tendências mais atuais até técnicas clássicas. Utilizo produto de alta qualidade e sigo rigorosos padrões de higiene para garantir sua segurança e satisfação. Seja para uma ocasião especial ou para o cuidado diário, nosso foco é realçar sua beleza com unhas que refletem estilo, saúde e personalidade. Agende seu atendimento e experimente o cuidado e a excelência que você merece.</p>
+            <!-- ============================
+        HTML dos cards de serviços
+        Cole esse bloco na sua página (apenas a parte do "cards")
+      ============================ -->
+      <section class="servicos-cards" aria-label="Serviços de Social Media">
+        <div class="cards-grid">
+          <!-- Card 1 -->
+          <article class="card" tabindex="0">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Ícone SVG (planejamento) -->
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M3 7h18M8 3v4M16 3v4M5 11h14M6 15h12M7 19h10"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Planejamento & Estratégia</h3>
+            <p class="card-desc">
+              Criação de plano de redes sociais, definição de público, objetivos, escolha de plataformas e calendário editorial.
+            </p>
+            <button class="card-toggle" aria-expanded="false">Ver mais</button>
 
-      <div class="cards-servicos">
+            <div class="card-more" hidden>
+              <ul>
+                <li>Definição de persona</li>
+                <li>KPIs e metas</li>
+                <li>Calendário editorial detalhado</li>
+              </ul>
+            </div>
+          </article>
 
-        <!-- Serviço 1 -->
-        <div class="card">
-          <img src="/assets/img/unhas/modelos/unha-em-gel.jpg" alt="Unhas em gel" />
-          <h3>Unhas em Gel</h3>
-          <p>Unhas resistentes, elegantes e duradouras com acabamento perfeito.</p>
+          <!-- Card 2 -->
+          <article class="card" tabindex="0">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Ícone SVG (conteúdo) -->
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M4 7h16v10H4z"/><path d="M8 7v-2h8v2"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Produção de Conteúdo</h3>
+            <p class="card-desc">
+              Criação de posts, carrosséis, Reels, stories, edição de fotos e vídeos, além das artes gráficas.
+            </p>
+            <button class="card-toggle" aria-expanded="false">Ver mais</button>
+
+            <div class="card-more" hidden>
+              <ul>
+                <li>Roteiro e gravação de vídeos</li>
+                <li>Edição para formatos verticais</li>
+                <li>Criação de artes (Canva/Photoshop)</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card" tabindex="0">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Ícone SVG (gestão) -->
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="8" r="2"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Gestão de Redes</h3>
+            <p class="card-desc">
+              Publicação programada, atendimento de mensagens, monitoramento de comentários e manutenção do tom de voz.
+            </p>
+            <button class="card-toggle" aria-expanded="false">Ver mais</button>
+
+            <div class="card-more" hidden>
+              <ul>
+                <li>Community management</li>
+                <li>Fluxo de atendimento (SLA)</li>
+                <li>Criação de respostas padrões</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card" tabindex="0">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Ícone SVG (engajamento) -->
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 20l-7-9 7-9 7 9-7 9z"/><path d="M12 12v8"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Engajamento & Crescimento</h3>
+            <p class="card-desc">
+              Estratégias para aumentar seguidores, engajamento, parcerias com influenciadores e campanhas interativas.
+            </p>
+            <button class="card-toggle" aria-expanded="false">Ver mais</button>
+
+            <div class="card-more" hidden>
+              <ul>
+                <li>Hashtags estratégicas</li>
+                <li>Parcerias / influenciadores</li>
+                <li>Sorteios e desafios</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="card" tabindex="0">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Ícone SVG (anúncios) -->
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6">
+                <rect x="3" y="5" width="18" height="14" rx="2"/><path d="M8 9h8M8 13h6"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Anúncios & Tráfego Pago</h3>
+            <p class="card-desc">
+              Criação, segmentação e otimização de campanhas em Meta Ads, Google Ads, TikTok Ads e remarketing.
+            </p>
+            <button class="card-toggle" aria-expanded="false">Ver mais</button>
+
+            <div class="card-more" hidden>
+              <ul>
+                <li>Estratégia de funil</li>
+                <li>A/B tests de criativos</li>
+                <li>Relatórios de CPA / ROAS</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="card" tabindex="0">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Ícone SVG (análise) -->
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M3 3v18h18"/><path d="M7 13l3-4 4 6 3-8"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Monitoramento & Relatórios</h3>
+            <p class="card-desc">
+              Acompanhamento de métricas, criação de relatórios periódicos e otimização com base em dados.
+            </p>
+            <button class="card-toggle" aria-expanded="false">Ver mais</button>
+
+            <div class="card-more" hidden>
+              <ul>
+                <li>Relatórios mensais</li>
+                <li>Análise de audiência</li>
+                <li>Recomendações práticas</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="card" tabindex="0">
+            <div class="card-icon" aria-hidden="true">
+              <!-- Ícone SVG (outros) -->
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 2v20M2 12h20"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Consultoria & Treinamento</h3>
+            <p class="card-desc">
+              Treinamentos para equipe, criação de manuais de atendimento e consultoria para pequenas empresas.
+            </p>
+            <button class="card-toggle" aria-expanded="false">Ver mais</button>
+
+            <div class="card-more" hidden>
+              <ul>
+                <li>Workshops</li>
+                <li>Manuais e SOPs</li>
+                <li>Auditoria de perfis</li>
+              </ul>
+            </div>
+          </article>
+
         </div>
+      </section>
 
-        <!-- Serviço 2 -->
-        <div class="card">
-          <img src="/assets/img/unhas/modelos/unha-em-fibra.jpg" alt="Unhas em fibra de vidro" />
-          <h3>Fibra de Vidro</h3>
-          <p>Alongamento leve, natural e de alta durabilidade para um visual impecável.</p>
-        </div>
-
-        <!-- Serviço 3 -->
-        <div class="card">
-          <img src="/assets/img/unhas/modelos/esmaltacao.jpg" alt="Esmaltação comum e em gel" />
-          <h3>Esmaltação</h3>
-          <p>Esmaltação comum ou em gel, com diversas cores e acabamentos incríveis.</p>
-        </div>
-
-        <!-- Serviço 4 -->
-        <div class="card">
-          <img src="/assets/img/unhas/modelos/arte-decoracao.jpg" alt="Arte e decoração de unhas" />
-          <h3>Decoração</h3>
-          <p>Desenhos, pedrarias e estilos exclusivos para destacar suas unhas.</p>
-        </div>
-
-      </div>
-
-      <div class="btn-container">
-          <a href="/agendamento.html" target="_blank" class="btn grande"><strong>Acesse minha agenda</strong></a>
-      </div>
-    </section>
-  </main>
+    </main>
 
     <div id="footer"></div>
     <!-- Footer será carregado aqui -->
@@ -80,5 +210,7 @@
 
     <!-- Para visualizar o mapa SIVI usando iframe com sandbox -->
     <script src="/js/modules/abrir-mapa-sivi.js"></script>
+
+    <script src="js/modules/servicos.js"></script>
   </body>
 </html>

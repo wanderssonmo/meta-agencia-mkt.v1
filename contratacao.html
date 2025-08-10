@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maurília Alves - Social Media</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon.ico">
+
+<!-- <meta name="google-adsense-account" content="ca-pub-8083660344980070"> -->
+
+  <meta property="og:image" content="https://meta-agencia-mkt-v1.vercel.app/assets/img/capa-de-compartilhar2.jpg">
+  <meta property="og:url" content="https://meta-agencia-mkt-v1.vercel.app/">
+
+  <meta name="description" content="Marketing Digital focado em resultados para pequenas, médias e grandes empresas.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="index, follow">
+  <!-- Incluindo CSS diretamente -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- faz parte do Font Awesome, uma biblioteca de ícones. Se a biblioteca não estiver carregada no seu projeto, os ícones não aparecerão.-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+<body>
+
+  <div id="header"></div>
+
+
+    <!-- ======== HERO ======== -->
+  <section class="hero">
+    <h1>Transforme sua presença online</h1>
+    <p>Planos de Social Mídia sob medida para o seu negócio</p>
+    <button class="btn" onclick="document.getElementById('formulario').scrollIntoView({behavior:'smooth'})">Contratar Agora</button>
+  </section> 
+
+  <!-- ======== SERVIÇOS ======== -->
+  <section>
+    <h2>O que oferecemos</h2>
+    <div class="servicos">
+      <div class="card">
+        <img src="https://i.ibb.co/xCkzz8r/content.png" alt="Conteúdo">
+        <h3>Criação de Conteúdo</h3>
+        <p>Posts, stories e reels otimizados para engajamento.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.ibb.co/DtVwfCP/ads.png" alt="Anúncios">
+        <h3>Gestão de Anúncios</h3>
+        <p>Campanhas no Facebook e Instagram para gerar vendas.</p>
+      </div>
+      <div class="card">
+        <img src="https://i.ibb.co/hL4Jm9v/analytics.png" alt="Análise">
+        <h3>Análise de Resultados</h3>
+        <p>Relatórios mensais e insights estratégicos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== PLANOS ======== -->
+  <section>
+    <h2>Nossos Planos</h2>
+    <div class="planos">
+      <div class="plano">
+        <h3>Básico</h3>
+        <p>R$ 500/mês</p>
+        <ul>
+          <li>8 posts por mês</li>
+          <li>Relatório básico</li>
+          <li>Suporte via WhatsApp</li>
+        </ul>
+        <button class="btn">Contratar</button>
+      </div>
+      <div class="plano">
+        <h3>Intermediário</h3>
+        <p>R$ 900/mês</p>
+        <ul>
+          <li>15 posts por mês</li>
+          <li>Relatórios avançados</li>
+          <li>Suporte prioritário</li>
+        </ul>
+        <button class="btn">Contratar</button>
+      </div>
+      <div class="plano">
+        <h3>Premium</h3>
+        <p>R$ 1500/mês</p>
+        <ul>
+          <li>30 posts por mês</li>
+          <li>Campanhas de anúncios</li>
+          <li>Consultoria mensal</li>
+        </ul>
+        <button class="btn">Contratar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FORMULÁRIO ======== -->
+  <section id="formulario">
+    <h2>Solicite uma Proposta</h2>
+    <form onsubmit="enviarWhatsApp(event)">
+      <input type="text" id="nome" placeholder="Seu nome" required>
+      <input type="email" id="email" placeholder="Seu e-mail" required>
+      <input type="tel" id="telefone" placeholder="Seu WhatsApp" required>
+      <select id="plano" required>
+        <option value="">Selecione um plano</option>
+        <option value="Básico">Básico</option>
+        <option value="Intermediário">Intermediário</option>
+        <option value="Premium">Premium</option>
+      </select>
+      <textarea id="mensagem" placeholder="Escreva sua mensagem" rows="4"></textarea>
+      <button type="submit" class="btn">Enviar pelo WhatsApp</button>
+    </form>
+  </section>
+
+  <footer id="footer"></footer>
+
+  <!-- Scripts -->
+  <script src="/js/main.js" defer></script>
+  <script src="/js/modules/importarHeader.js"></script>
+  <script src="/js/modules/portal-cliente.js"></script>
+  <script src="/js/modules/importarFooter.js"></script>
+  <!-- SweetAlert2 JS Botão para redirecionar-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

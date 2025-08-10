@@ -1,59 +1,126 @@
-.conteudo-servicos {
-  padding: 40px 20px;
-  /* background-color: #fff0f5; */
+/* ============================
+  CSS dos cards (copiar para seu arquivo .css)
+============================ */
+
+/* Variáveis para fácil customização */
+:root{
+  --card-bg: #ffffff;
+  --card-border: #e6e9ee;
+  --accent: #0b76ff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --radius: 12px;
+  --shadow: 0 6px 18px rgba(17,24,39,0.06);
+  --gap: 1.25rem;
+  --container-max: 1200px;
 }
 
-.servicos h2 {
-  text-align: center;
-  color: #c73871;
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-.servicos .descricao {
-  text-align: center;
-  max-width: 900px;
-  margin: 0 auto 40px;
-  font-size: 1.1em;
-  color: #555;
-}
-
-.cards-servicos {
+/* Container geral */
+.servicos-cards{
+  padding: 2rem 1rem;
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
   justify-content: center;
+  background: transparent;
 }
 
-.card {
-  background-color: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  max-width: 260px;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s;
+/* Grid responsivo */
+.cards-grid{
+  width: 100%;
+  max-width: var(--container-max);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--gap);
 }
 
-.card:hover {
-  transform: translateY(-5px);
+/* Ajustes para telas maiores */
+@media (min-width: 640px){
+  .cards-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px){
+  .cards-grid{ grid-template-columns: repeat(3, 1fr); }
 }
 
-.card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  margin-bottom: 15px;
+/* Card base */
+.card{
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  outline: none;
 }
 
-.card h3 {
-  font-size: 1.3em;
-  color: #c71585;
-  margin-bottom: 10px;
+/* hover / focus */
+.card:hover,
+.card:focus-within,
+.card:focus{
+  transform: translateY(-6px);
+  border-color: rgba(11,118,255,0.12);
+  box-shadow: 0 12px 30px rgba(11,118,255,0.08);
 }
 
-.card p {
-  font-size: 0.95em;
-  color: #444;
-  line-height: 1.4;
+/* Icon e título */
+.card-icon{
+  width: 56px;
+  height: 56px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(11,118,255,0.07), rgba(11,118,255,0.02));
+  color: var(--accent);
 }
+
+.card-title{
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+/* Descrição curta */
+.card-desc{
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height:1.45;
+  flex: 1;
+}
+
+/* Botão ver mais */
+.card-toggle{
+  align-self: start;
+  background: transparent;
+  border: none;
+  color: var(--accent);
+  font-weight: 600;
+  cursor: pointer;
+  padding: .35rem .5rem;
+  border-radius: 8px;
+  transition: background .12s ease;
+}
+.card-toggle:hover,
+.card-toggle:focus{
+  background: rgba(11,118,255,0.06);
+  outline: none;
+}
+
+/* Conteúdo extra (quando expandir) */
+.card-more{
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+.card-more ul{
+  margin: 0;
+  padding-left: 1.15rem;
+}
+.card-more li{
+  margin: .35rem 0;
+}
+
+/* Pequenas melhorias de acessibilidade */
+.card:focus{ box-shadow: 0 0 0 3px rgba(11,118,255,0.12); }
