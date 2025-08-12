@@ -15,6 +15,16 @@
   --container-max: 1200px;
 }
 
+.conteudo-servicos {
+  animation: fadeIn 1s ease-in;
+}
+
+.titulo-servicos {
+  color: #00AFAD;
+  text-align: center;
+  margin-top: 20px;
+}
+
 /* Container geral */
 .servicos-cards{
   padding: 2rem 1rem;
@@ -124,3 +134,23 @@
 
 /* Pequenas melhorias de acessibilidade */
 .card:focus{ box-shadow: 0 0 0 3px rgba(11,118,255,0.12); }
+
+
+.card8-teste {
+      background-image: url(/assets/img/servicos/planejameno-estrategia.png);
+      width: 100%; /* largura total */
+      background-size: cover; /* faz a imagem cobrir todo o espaço da div */
+      background-position: center; /* centraliza a imagem */
+      background-repeat: no-repeat; /* evita repetição */
+      border-radius: 8px;
+}
+
+.card8-teste:hover {
+  transform: translateY(-6px);
+  border-color: rgba(11,118,255,0.12);
+  box-shadow: 0 12px 30px rgba(11,118,255,0.08);
+}
+
+.card8-teste {
+  transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}

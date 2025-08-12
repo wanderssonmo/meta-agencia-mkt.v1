@@ -1,6 +1,7 @@
 
 .conteudo-sobre {
   padding: 40px 40px;
+  animation: fadeIn 1s ease-in;
 } 
 
 .sobre h2 {
